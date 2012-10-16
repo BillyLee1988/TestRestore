@@ -84,7 +84,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
-
     return YES;
 }
 

@@ -38,18 +38,6 @@
     return myViewController;
 }
 
-- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
-    [coder encodeObject:[NSString stringWithFormat:@"%d", self.selectedIndex] forKey:@"UnsavedText"];
-    [super encodeRestorableStateWithCoder:coder];
-}
-
-- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
-    
-    NSLog(@"%@",[coder decodeObjectForKey:@"UnsavedText"]);
-    self.selectedIndex = [[coder decodeObjectForKey:@"UnsavedText"] integerValue];
-    [super decodeRestorableStateWithCoder:coder];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
